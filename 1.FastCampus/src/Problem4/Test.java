@@ -9,6 +9,7 @@ public class Test {
         BFS bfs = new BFS(graph.getCount());
         bfs.setMatrix(graph.getVertexMatirx());
 
+        //그래프 생성
         graph.addEdge(0, 1, 1);
         graph.addEdge(0, 2, 1);
         graph.addEdge(1, 3, 1);
@@ -18,8 +19,9 @@ public class Test {
         graph.addEdge(3, 7, 1);
         graph.addEdge(4, 5, 1);
 
+        System.out.println("DFS 결과 출력");
         dfs.DFSTraversal(0);
-        System.out.println();
+        System.out.println("\nBFS 결과 출력");
         bfs.BFSTraversal(0);
     }
 }
