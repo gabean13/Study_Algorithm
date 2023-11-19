@@ -6,6 +6,9 @@ public class Test {
         DFS dfs = new DFS(graph.getCount());
         dfs.setMatrix(graph.getVertexMatirx());
 
+        BFS bfs = new BFS(graph.getCount());
+        bfs.setMatrix(graph.getVertexMatirx());
+
         graph.addEdge(0, 1, 1);
         graph.addEdge(0, 2, 1);
         graph.addEdge(1, 3, 1);
@@ -16,5 +19,7 @@ public class Test {
         graph.addEdge(4, 5, 1);
 
         dfs.DFSTraversal(0);
+        System.out.println();
+        bfs.BFSTraversal(0);
     }
 }
